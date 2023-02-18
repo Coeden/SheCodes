@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eden's Blog</title>
+    <style>
+      body {
+        background-color: burlywood;
+      }
+      hr {
+        width: 800px;
+        border: 1px solid olive;
+      }
+
+      h1 {
+        margin-top: 40px;
+        line-height: 40px;
+        color: rgb(160, 17, 17);
+        font-family: Brush Script MT;
+        text-align: center;
+        font-style: oblique;
+      }
+      img {
+        width: 200px;
+        margin: 0 auto;
+        display: inline-flex;
+        border: 1px transparent;
+        border-radius: 80px;
+      }
+
+      h3 {
+        word-spacing: 100px;
+        font-family: cursive;
+        text-align: center;
+        line-height: 50px;
+      }
+
+      a {
+        color: darkred;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: rgb(240, 88, 113);
+        transition: all 200ms ease-in-out;
+      }
+      h2 {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        text-align: center;
+        font-weight: bold;
+        font-style: unset;
+        font-size: medium;
+        color: #2e1503;
+        line-height: 40px;
+      }
+      button {
+        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+        border: 1px transparent;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 2px #888888;
+        color: rgb(133, 59, 88);
+        background-color: burlywood;
+        cursor: pointer;
+      }
+      button:hover {
+        color: darkred;
+        transition: all 200ms ease-in-out;
+      }
+      div {
+        display: block;
+        text-align: center;
+      }
+      p {
+        font-family: monospace;
+        line-height: 20px;
+        margin-top: 40px;
+      }
+      em {
+        font-size: x-large;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>L💕ve Eden...</h1>
+    <hr />
+    <div>
+      <span
+        ><h3>
+          <a href="#">MAKEUP<em>&</em>BEAUTY💄</a>
+          <a href="#">TRAVEL✈</a>
+          <a href="#">FOOD🍕</a>
+          <a href="#">ADVENTURE🏖</a>
+          <a href="#">SHOP🛒</a>
+        </h3></span
+      >
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/114/original/mb1.jpg?1666046571"
+        alt="Blog wallpaper"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/115/original/LS4.jpg?1666046606"
+        alt="Blog wallpaper"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/113/original/food5.jpg?1666046553"
+        alt="Blog wallpaper"
+      />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/049/112/original/adv2.1.jpg?1666046530"
+        alt="Blog wallpaper"
+      />
+
+      <h2>
+        Welcome to Love Eden! This blog was founded recently just because I now
+        know how to build websites. How eciting!💃 <br />
+        You can expect all kinds of DIYs, recipes, travel tips, adventure and
+        destination discoveries. Oh my Fantasy!😍
+      </h2>
+      <button>Subscribe to my Newsletter</button>
+
+      <p>
+        This page was built by Mary Eden. <br />
+        ©2022
+      </p>
+    </div>
+
+    <script>
+      function subscribe() {
+        let email = prompt(
+          "Enter a valid email address to get new post notifications!🔔"
+        );
+        if (email.length < 10){
+          alert ()
+        }
+        alert(`Welcome on board ${email}!`);
+        alert(`Thank you for subscribing.`);
+      }
+
+      button = document.querySelector("button");
+      button.addEventListener("click", subscribe);
+    </script>
+  </body>
+</html>
